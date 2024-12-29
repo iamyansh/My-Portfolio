@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/075148dbbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <p><span>S</span>hreyansh.</p>
+                <p><span>S</span>.K.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#coding-profiles">Coding Profiles</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Shreyansh</span> <br>Kumar Sahu from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- About ------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a software developer with a strong foundation in problem-solving, having solved over 1500 DSA problems. Proficient in front-end and back-end technologies like HTML, CSS, SCSS, JavaScript, React, React Redux, C#, C++, Node.js, Express.js, MongoDB, and SQL, I also have experience with Git, GitHub, and hosting projects. I thrive on building efficient web applications and continuously expanding my skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem Solving Skills</span>Solved more than 1500 problems on different plateforms like GFG, Leetcode, Codechef, Codeforces etc.</li>
+                            <li><span>Frontend Development</span>Making projects using HTML, CSS, Bootstrap, JavaScript, React, React-redux, Chakra for UI etc.</li>
+                            <li><span>Backend Development</span>Making Rest API and connects with frontend using ExpressJS, NodeJS, MongoDB, AWT etc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>As a fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span>B-Tech (7.8 cgpa)<br> CS (AI & ML) <br>Allenhouse Institute of Technology  </li>
+                            <li><span>2019 - 2020</span>Intermediate (71%)<br>Sri Nanak S. S. M. Inter college</li>
+                            <li><span>2017 - 2018</span>Highschool (82%) <br>Sri Nanak S. S. M. Inter college</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------- Skills --------------------------------------->
+
+    <div id="skills-section">
+        <div class="container">
+            
+            <h1 class="sub-title">My Skills</h1>
+            
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>HTML</h3>
+                        <p>95%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>CSS</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>Bootstrap</h3>
+                        <p>95%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>JavaScript</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>React js</h3>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>React-redux</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+              
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>Node Js</h3>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>Express Js</h3>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>MongoDB</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>My Sql</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>C++</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-description">
+                        <h3>C#</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------- Coding Profiles ------------------------------------->
+
+    <div id="coding-profiles">
+        <div class="container">
+            <h1 class="sub-title">Coding Profiles</h1>
+            <div class="coding-profiles-list">
+                
+                <a class="coding-profile" href="https://www.geeksforgeeks.org/user/shreyansh_kumar_sahu/" target="_blank">
+                    
+                    <img src="images/geeksforgeek.png">
+                    <h2>GFG</h2>
+                    <div class="description">
+
+                        <div class="row">
+                            <span>Institute rank:</span>
+                            <p id="gfg_institute_rank"></p>
+                         </div>
+
+                        <div class="row">
+                           <span>Problem Solved:</span>
+                           <p  id="gfg_solved_problems"></p>
+                        </div>
+                        <div class="row">
+                           <span>Coding Score:</span>
+                           <p id="gfg_coding_score"></p>
+                        </div>
+                        <div class="row">
+                           <span>Max Streak:</span>
+                           <p id="gfg_streak"></p>
+                        </div>
+                    
+                       
+                    </div>
+                    
+                </a>
+                <a class="coding-profile" href="https://leetcode.com/u/ShreyanshLander/" target="_blank">
+                   
+                    <img src="images/leetcode.png">
+                    <h2>Leetcode</h2>
+                    <div class="description">
+
+                        <div class="row">
+                            <span>Level:</span>
+                            <p id="leetcode_level"></p>
+                         </div>
+
+                        <div class="row">
+                           <span>Problem Solved:</span>
+                           <p id="leetcode_solved_problems"></p>
+                        </div>
+
+                        <div class="row">
+                            <span>Max rating:</span>
+                            <p id="leetcode_max_rating"></p>
+                         </div>
+
+                        <div class="row">
+                           <span>Current rating:</span>
+                           <p id="leetcode_curr_rating"></p>
+                        </div>
+
+                        <div class="row">
+                           <span>Max Streak:</span>
+                           <p id="leetcode_streak"></p>
+                        </div>
+
+                        <div class="row">
+                           <span>Global ranking :</span>
+                           <p id="leetcode_global_ranking"></p>
+                        </div>
+
+                        <div class="row">
+                           <span>Top :</span>
+                           <p id="leetcode_top"></p>
+                        </div>
+                        
+                        
+                    </div>
+                </a>
+                <a class="coding-profile" href="https://www.codechef.com/users/shreyansh_5ahu" target="_blank">
+                    <img src="images/code-chef.png">
+                    <h2>Codechef</h2>
+                    <div class="description">
+
+                        <div class="row">
+                            <span>Current level:</span>
+                            <p id="codechef_level"></p>
+                         </div>
+                        <!-- <div class="row">
+                           <span>Problem Solved:</span>
+                           <p id="codechef_solved_problems"></p>
+                        </div> -->
+                        <div class="row">
+                            <span>Max rating:</span>
+                            <p id="codechef_max_rating"></p>
+                         </div>
+                        <div class="row">
+                           <span>Current rating:</span>
+                           <p id="codechef_curr_rating"></p>
+                        </div>
+                        <div class="row">
+                           <span>Country ranking:</span>
+                           <p id="codechef_country_ranking"></p>
+                        </div>
+                        <div class="row">
+                           <span>Global ranking:</span>
+                           <p id="codechef_global_ranking"></p>
+                        </div>
+                
+                        
+                    </div>
+                </a>
+                <a class="coding-profile" href="https://codeforces.com/profile/shreyansh_kumar" target="_blank">
+                    <img src="images/code-forces.png">
+                    <h2>Codeforces</h2>
+                    <div class="description">
+                        <!-- <div class="row">
+                           <span>Problem Solved:</span>
+                           <p id="codeforces_solved_problems"></p>
+                        </div> -->
+                        <div class="row">
+                            <span>Max rating:</span>
+                            <p id="codeforces_max_rating"></p>
+                         </div>
+                        <div class="row">
+                           <span>Current rating:</span>
+                           <p id="codeforces_curr_rating"></p>
+                        </div>
+                        <!-- <div class="row">
+                           <span>Global ranking :</span>
+                           <p id="codeforces_global_ranking"></p>
+                        </div> -->
+                        
+                        <div class="row">
+                           <span>Level:</span>
+                           <p id="codeforces_curr_level"></p>
+                        </div>
+                        <div class="row">
+                           <span>Max Level:</span>
+                           <p id="codeforces_max_level"></p>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------- portfolio -------------------------------------->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Watch App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a target="_blank" href="https://shreyansh-watch-app.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Task Management System</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <div class="links">
+                            <a target="_blank" style="margin-right: 10px;" href="https://shreyansh-task-management-system.netlify.app/task/index.html"><i class="fas fa-external-link-alt"></i></a>
+                            <a target="_blank" href="https://shreyansh-task-management-system.netlify.app/employees/index.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>LinkedIn App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a target="_blank" href="https://shreyansh-linked-in.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Men Jewelery Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a target="_blank" href="https://shreyansh-facetique-adornment.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <a class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------- contact ------------------------------------------->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="mailto:shreyanshkumarsahu100@gmail.com"><i class="fas fa-paper-plane"></i> shreyanshkumarsahu100@gmail.com</a>
+                    <a href="tel:+8303556736"><i class="fa-solid fa-square-phone"></i> +91-8303556736</a>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shreyansh-kumar-sahu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a ><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/iamyansh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Shreyansh. Made with <i class="fas fa-heart"></i> by Shreyansh</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+
+
+</html>
