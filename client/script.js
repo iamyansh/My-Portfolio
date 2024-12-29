@@ -1,5 +1,5 @@
-axios.defaults.baseURL = 'http://localhost:5000';
-
+axios.defaults.baseURL = process.env.BASE_URL;
+// console.log(process.env.BASE_URL);
 
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
