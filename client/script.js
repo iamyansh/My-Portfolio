@@ -1,5 +1,5 @@
-axios.defaults.baseURL = process.env.BASE_URL;
-// console.log(process.env.BASE_URL);
+axios.defaults.baseURL = 'https://my-portfolio-1-sdwu.onrender.com';
+
 
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
