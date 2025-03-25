@@ -73,13 +73,21 @@ for(skillItem of skillItems){
 const RenderGFGData = async() => {
 
 
-    const response = await getData('/proxy',{api: 'https://www.geeksforgeeks.org/gfg-assets/_next/data/ZakNYfjR6KsLwkgdllTPT/user/shreyansh_kumar_sahu.json', method: "GET"});
+    // const response = await getData('/proxy',{api: 'https://www.geeksforgeeks.org/gfg-assets/_next/data/ZakNYfjR6KsLwkgdllTPT/user/shreyansh_kumar_sahu.json', method: "GET"});
 
 
-    const gfgSolvedProblems = response.pageProps.userInfo.total_problems_solved;
-    const gfgCodingScore = response.pageProps.userInfo.score;
-    const gfgStreak = response.pageProps.userInfo.pod_solved_longest_streak;
-    const gfgInstituteRank = response.pageProps.userInfo.institute_rank;
+    // const gfgSolvedProblems = response.pageProps.userInfo.total_problems_solved;
+    // const gfgCodingScore = response.pageProps.userInfo.score;
+    // const gfgStreak = response.pageProps.userInfo.pod_solved_longest_streak;
+    // const gfgInstituteRank = response.pageProps.userInfo.institute_rank;
+
+    const response = await getData('/proxy',{api: 'https://authapi.geeksforgeeks.org/api-get/user-profile-info/?handle=shreyansh_kumar_sahu&article_count=false&redirect=true', method: "GET"});
+
+
+    const gfgSolvedProblems = response.data.total_problems_solved;
+    const gfgCodingScore = response.data.score;
+    const gfgStreak = response.data.pod_solved_longest_streak;
+    const gfgInstituteRank = response.data.institute_rank;
     
     document.getElementById("gfg_solved_problems").innerText = gfgSolvedProblems;
     document.getElementById("gfg_coding_score").innerText = gfgCodingScore;
